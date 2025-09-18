@@ -1,24 +1,61 @@
 ---
-name: Prof. Jakob Eriksson
-title: Recent Rust enthusiast
+name: Santhosh Reddy
+title: Deep Learning Enthusiast
 ---
 
-# Some Current Research Projects
+# Current Research Project
 
-Below is a sampling of current research projects we are pursuing in my group. I am always open to exploring new ideas, so if you have something you are passionate about, and which you think I can advise you effectively on, then by all means get in touch!
+I'm currently part of the Vitality Lab at the University of Illinois Chicago, where we work on creating digital tools to help people lead healthier lives. Our focus is on supporting individuals with chronic conditions like cancer, obesity, and diabetes by improving their diet, physical activity, and weight management. We combine behavioral science with technology to develop solutions that are accessible and effective. Our goal is to make healthy living easier and more achievable for everyone.
 
-# Compound Processes
-_with Nilanjana Basu_ 
-Modern computer software commonly consists of groups of individual programs working together toward the same goal. This *common purpose* model is not reflected in the way the software actually executes today. Instead, each program runs in carefully guarded isolation, communicating via secure system calls. This project introduces a new concept, a “compound process” which better reflects the realities of modern software. A compound process may host several “guest” programs in a single trust domain, eliminating expensive and often redundant safeguards between components of a single software stack, to yield substantial performance benefits. 
+# Graduate Projects
 
-# Efficient Multi-Threading with Trust<T> 
-_with Ben Baenen_
+1. De-expression Residue Learning
 
-Trust<T> is a Rust-based message-passing framework which aims to replace locking and shared objects with a particularly efficient form of message passing. 
-With Trust<T>, a shared object is _entrusted_ to a single core, which is responsible for all accesses to this object. 
-This ensures race-freedom on the object, eliminates lock contention, and dramatically constrains opportunities for false sharing, often resulting in dramatically higher performance. 
+Developed a method for de-expressing image samples through residue learning. Trained a U-Net generator to create high-quality de-expressed images by utilizing layer-specific residuals and a custom loss function for effective expression learning.
 
-# Rackwide Computing
-_with Noaman Ahmad_
+Technologies: Python, PyTorch, Keras, TensorFlow, OpenCV
 
-Building on Trust<T> and its elimination of shared memory computing, Rackwide Computing is the idea that we can program against an entire rack of computers as if it was a single one. With Rackwide computing, we use Trust<T> delegation over RDMA to create a programming framework that seamlessly scales programs to run across multiple machines. In essence, a single _process_ may span an entire rack, allowing (mostly) normal programs to scale to thousands of cores, without the complexities and inefficiencies of cluster computing. 
+Architecture: Conditional GANs, U-Net, Residue Learning
+
+---
+
+2. Neural Machine Translation: French to English 
+
+Built a French-to-English translation model using LSTM-based seq2seq and Transformer architectures. Preprocessed bilingual text with tokenization, padding, and vocabulary indexing. Trained models with teacher forcing and evaluated using BLEU scores. Enhanced fluency using attention mechanisms.
+
+Technologies: Python, TensorFlow/Keras, NLTK
+
+Architecture: LSTM, Transformer, Encoder-Decoder, Attention
+
+---
+
+3. Progressive In-Context Alignment (PICA)
+
+Reproduced the PICA method for in-context learning using the LLaMA2-7B model from scratch in Google Colab. Implemented Zero-shot, Vanilla ICL, and PICA setups with controlled token generation (10–150 tokens). Built custom prompt formats, handled dataset inputs, and evaluated outputs using embedding similarity, BLEU, ROUGE, and cosine similarity.
+
+Technologies: Python, PyTorch, Hugging Face Transformers, Google Colab
+
+Model Type: LLaMA2-7B, In-Context Learning (ICL), PICA 
+
+Evaluation: Cosine Similarity, BLEU, ROUGE, JustEval (Helpful, Factual, Clear, Deep, Engaging, Safe)
+
+---
+
+4. Learning Based Airline Delay Estimation
+
+Developed a predictive model to classify flight delays using large-scale flight and weather data, performing data analysis and applying deep learning algorithms by analyzing several features to improve decision-making. Handled data cleaning, missing values, and feature engineering, and identified key delay-causing factors through exploratory data analysis.
+
+Technologies: Python, TensorFlow, PySpark, Pandas, Scikit-Learn, Tableau, Matplotlib
+
+---
+
+5. Voice Mask
+
+Created a voice alteration system that modifies a person's voice to match another's characteristics using advanced deep learning techniques.
+
+Technologies: Python, PyTorch, Keras, TensorFlow, Librosa
+
+Architecture: Star-GAN, CycleGAN, HiFi-GAN
+
+---
+
